@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/constants.dart';
-import 'package:news_app/models/news.dart';
+import 'package:news_app/models/dummy_news_model.dart';
 import 'package:news_app/widgets/circle_button.dart';
 
 class ReadNewsView extends StatelessWidget {
-
-  final News news;
+  final DummyNewsModel news;
 
   const ReadNewsView({Key? key, required this.news}) : super(key: key);
 
@@ -133,7 +132,10 @@ class ReadNewsView extends StatelessWidget {
 class Status extends StatelessWidget {
   final IconData icon;
   final String total;
-  const Status({Key? key, required this.icon, required this.total}) : super(key: key);
+
+  const Status({Key? key, required this.icon, required this.total})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Row(

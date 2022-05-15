@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/models/news.dart';
 import 'package:news_app/constants.dart';
+import 'package:news_app/models/dummy_news_model.dart';
 
 class SecondaryCard extends StatelessWidget {
-  final News news;
+  final DummyNewsModel news;
+
   const SecondaryCard({Key? key, required this.news}) : super(key: key);
 
   @override

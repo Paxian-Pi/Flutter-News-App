@@ -60,7 +60,11 @@ class HomeView extends StatelessWidget {
           ),
         ),
         body: const TabBarView(
-          children: [BreakingTabView(), SocialTabView(), TrendingTabView()],
+          children: [
+            BreakingTabView(),
+            SocialTabView(),
+            TrendingTabView(),
+          ],
         ),
       ),
     );
