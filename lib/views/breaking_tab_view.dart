@@ -1,6 +1,3 @@
-import 'dart:convert';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/constants.dart';
@@ -8,8 +5,6 @@ import 'package:news_app/models/news.dart';
 import 'package:news_app/views/read_news_view.dart';
 import 'package:news_app/widgets/primary_card.dart';
 import 'package:news_app/widgets/secondary_card.dart';
-
-import '../models/news_api_test.dart';
 
 class BreakingTabView extends StatelessWidget {
   const BreakingTabView({Key? key}) : super(key: key);
@@ -23,6 +18,7 @@ class BreakingTabView extends StatelessWidget {
           height: 300.0,
           padding: const EdgeInsets.only(left: 18.0),
           child: ListView.builder(
+            // This 'breakingNewsList' value comes from a dummy-news-list class
             itemCount: breakingNewsList.length,
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
@@ -56,6 +52,7 @@ class BreakingTabView extends StatelessWidget {
           ),
         ),
         ListView.builder(
+          // This 'breakingNewsList' value comes from a dummy-news-list class
           itemCount: recentList.length,
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
@@ -75,7 +72,8 @@ class BreakingTabView extends StatelessWidget {
               child: Container(
                 width: double.infinity,
                 height: 135.0,
-                margin: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 8.0),
+                margin:
+                    const EdgeInsets.symmetric(horizontal: 18.0, vertical: 8.0),
                 child: SecondaryCard(news: recent),
               ),
             );

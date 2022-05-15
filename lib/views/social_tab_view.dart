@@ -9,6 +9,7 @@ class SocialTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      // This 'recentList' value comes from a dummy-news-list class
       itemCount: recentList.length,
       scrollDirection: Axis.vertical,
       physics: const BouncingScrollPhysics(),

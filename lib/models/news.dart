@@ -1,4 +1,6 @@
 class News {
+  // This is a dummy news JSON response class
+
   final String title;
   final String subtitle;
   final String content;
@@ -26,19 +28,19 @@ class News {
 
 List<News> breakingNewsList = [
   News(
-    author: "Nick Chong",
+    author: "Arielle Pardes",
     estimate: "3",
     category: "Bitcoin",
     favorite: "700",
     seen: "4.5K",
     time: "4 hours ago",
-    title:
-        "What Correction? On-Chain Outlook for Bitcoin Still Bright After 10% Drop",
-    image: "https://bitcoinist.com/wp-content/uploads/2020/05/shutterstock_717244969-1920x1142.jpg",
+    title: "Miami’s Bitcoin Conference Left a Trail of Harassment",
+    image:
+        "https://media.wired.com/photos/627a89e3e37e715cb7d760d2/191:100/w_1280,c_limit/Bitcoin_Miami_Biz_GettyImages-1239817123.jpg",
     subtitle:
-        "Just days ago, Bitcoin was trading at \$9,800, just days away from decisively passing \$10,000. Now, the cryptocurrency is trading at \$9,200, having collapsed on the back of fears of Satoshi Nakamoto dumping his cryptocurrency",
+        "For some women, inappropriate conduct from other conference-goers continued to haunt them online.",
     content:
-        "Just days ago, Bitcoin was trading at \$9,800, just days away from decisively passing \$10,000. Now, the cryptocurrency is trading at \$9,200, having collapsed on the back of fears of Satoshi Nakamoto dumping his cryptocurrency.\n\nIt’s a drop that has had some investors fearing the worst.\n\nYesterday, for instance, Bitcoin closed below a key technical support level: the middle Bollinger Band, which is the 20-day moving average. AI and Cloud specialist at Microsoft Joe McCann, who moonlights as a popular crypto trader, wrote on the matter:“A close below \$9287 for BTC would be bad for bulls, that’s the 20 day.\n\nYet a number of on-chain and fundamental trends have indicated that the cryptocurrency’s outlook remains strong.” ",
+        "Now, even though there are a number of women-focused crypto spaces, Odeniran says women are still underrepresented. Ive been in spaces where Im the only Black person, or the only woman, or the only B… [+3828 chars]",
   ),
   News(
     author: "BBC News",
@@ -188,20 +190,19 @@ List<News> trendingList = [
 
 List<News> recentList = [
   News(
-    author: "Nick Chong",
+    author: "Darrell Etherington",
     estimate: "3",
-    category: "Bitcoin",
+    category: "Tech",
     favorite: "700",
     seen: "41.51K",
     time: "4 hours ago",
-    title:
-        "Beware of an Android Spyware Mandrake that went Undetected for Last 4 Years",
+    title: "Apple said to be testing a switch to USB-C for future iPhones",
     image:
-        "https://i2.wp.com/1.bp.blogspot.com/-eJLbaED73Q0/XsiYfSJ-paI/AAAAAAAAJA4/lDvgPb3NfX8QhkR4Qp79rfua5LXxW4q9QCLcBGAsYHQ/s1600/mandrake%2Bmalware.png?ssl=1",
+        "https://techcrunch.com/wp-content/uploads/2019/09/getty-usb-c-cable.jpg?w=599",
     subtitle:
-        "Just days ago, Bitcoin was trading at \$9,800, just days away from decisively passing \$10,000. Now, the cryptocurrency is trading at \$9,200, having collapsed on the back of fears of Satoshi Nakamoto dumping his cryptocurrency",
+        "It’s neither surprising, nor necessarily new scuttlebutt, but one of the most reliable Apple news scoopers of all time has chimed in to say that Apple is indeed at least serious enough about a potential switch from Lightning to USB-C on future iPhones that it…",
     content:
-        "Just days ago, Bitcoin was trading at \$9,800, just days away from decisively passing \$10,000. Now, the cryptocurrency is trading at \$9,200, having collapsed on the back of fears of Satoshi Nakamoto dumping his cryptocurrency.\n\nIt’s a drop that has had some investors fearing the worst.\n\nYesterday, for instance, Bitcoin closed below a key technical support level: the middle Bollinger Band, which is the 20-day moving average. AI and Cloud specialist at Microsoft Joe McCann, who moonlights as a popular crypto trader, wrote on the matter:“A close below \$9287 for BTC would be bad for bulls, that’s the 20 day.\n\nYet a number of on-chain and fundamental trends have indicated that the cryptocurrency’s outlook remains strong.” ",
+        "Its neither surprising, nor necessarily new scuttlebutt, but one of the most reliable Apple news scoopers of all time has chimed in to say that Apple is indeed at least serious enough about a potenti…",
   ),
   News(
     author: "BBC News",
@@ -210,9 +211,12 @@ List<News> recentList = [
     favorite: "502",
     seen: "11.21K",
     time: "10 hours ago",
-    title: "Hertz: Car rental firm files for US bankruptcy protection - BBC News",
-    image: "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/y3wlnheedaagzagh7ysg.jpg",
-    subtitle: "The company said the coronavirus pandemic had led to an \"abrupt\" decline in bookings.",
+    title:
+        "Hertz: Car rental firm files for US bankruptcy protection - BBC News",
+    image:
+        "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/y3wlnheedaagzagh7ysg.jpg",
+    subtitle:
+        "The company said the coronavirus pandemic had led to an \"abrupt\" decline in bookings.",
     content:
         "Car rental company Hertz has filed for bankruptcy protection in the US after the pandemic saw its business plummet.\n\nThe firm, which earns much of its income from car rentals at airports, said it had been affected by the sharp downturn in global travel.\n\nIt will continue to operate while restructuring its debts.\n\nHertz's international operations in Europe, Australia and New Zealand as well as its franchised locations in the US are not affected.\n\nThe company - which began operating a century ago in Chicago with a dozen Model T Ford cars - had already furloughed or laid off 20,000 employees, or around half of its global workforce, in response to the pandemic.\n\nIts chief executive resigned last week.\n\nBefore the pandemic the company had amassed billions of dollars in debt, with the rise of ride-hailing apps leading to a drop in demand for car rentals.\n\n.The impact of Covid-19 on travel demand was sudden and dramatic, causing an abrupt decline in the company's revenue and future bookings,Hertz said on Friday.\n\n.While it had taken immediate actions to prioritize the health and safety of employees and customers, eliminate all non-essential spending and preserve liquidity, the uncertainty over if and when the market would recover led to its decision, it said.",
   ),
@@ -233,18 +237,19 @@ List<News> recentList = [
         "Now’s a prime opportunity to get some AirPods if you’d like them for your walks or just to improve your video calls. Amazon is selling AirPods with a wireless charging case for \$150. That’s \$50 off the official price, and \$20 lower than the usual discounts. You can also score the standard AirPods for \$130 if you’re content to charge with a cable.As has been true ever since launch, the AirPods’ chief allure is convenience. They’re easy to set up on an iOS device, switch seamlessly between multiple Apple devices and have conveniences like always-available “Hey Siri” and automatic pausing when you remove a bud. The wireless case makes it that much easier to top up at the end of a long day.\n\nThe same caveats still apply. While you technically can use AirPods with Android and Windows devices, they clearly work best within Apple’s ecosystem. The buds’ five-hour claimed battery life is strictly acceptable (you’ll be thankful for that battery case). And if the EarPods that came with your iPhone don’t fit you well, the AirPods won’t either. You’ll want to look at alternatives like the AirPods Pro if you want something better-suited to workouts. Still, there are some reasons why AirPods are popular — they take many of the hassles out of Bluetooth earbuds.",
   ),
   News(
-    author: "Kirsten Korosec",
+    author: "Alexandra Ames",
     estimate: "8",
     category: "Tech",
     favorite: "12K",
     seen: "31.1K",
     time: "22 Hours ago",
-    title: "'Fallout Shelter' joins Tesla arcade in latest software update",
-    image: "https://yonulis.com/wp-content/uploads/2020/02/tesla-1.jpg",
+    title: "48 hours left to save \$200 on TC Sessions: Mobility",
+    image:
+        "https://s.yimg.com/ny/api/res/1.2/PNdmGH98hoItIkCYOFo2Pw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD01NDk-/https://s.yimg.com/uu/api/res/1.2/l7LgBjiDXuUEFLJZ8w9Bew--~B/aD04MDA7dz0xNzUwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/techcrunch_350/4a9297971fec4e6f5c06f2675a6ca77f",
     subtitle:
-        "J.K. Rowling has been drinking a lot and you'd better believe she has some thoughts on Bitcoin.\nNoted TERF and author of The Cuckoo’s Calling, Rowling decided Friday was the perfect time to learn about the cryptocurrency Bitcoin",
+        "You have just 48 hours remaining to save \$200 on TC Sessions: Mobility 2022, our first in-person mobility event since 2019.  The event takes place on May 18-...",
     content:
-        'J.K. Rowling has been drinking a lot and you`d better believe she has some thoughts on Bitcoin.\nNoted TERF and author of The Cuckoo’s Calling, Rowling decided Friday was the perfect time to learn about the cryptocurrency Bitcoin.\n\nNoted TERF and author of The Cuckoo’s Calling, Rowling decided Friday was the perfect time to learn about the cryptocurrency Bitcoin. And so, like any celebrity who wants to start her day off with a ray of positivity, she hopped on Twitter to engage.\n\nOver the course of the next several hours, as legions of crypto try-hards leapt at the opportunity to explain consensus algorithms, Rowling`s nascent views on Bitcoin turned from mildly inquisitive to a friendly mocking.\n\nPerhaps it was the fourth Old Fashioned speaking?\n\n"People are now explaining Bitcoin to me, and honestly, it`s blah blah blah collectibles (My Little Pony?) blah blah blah computers (got one of those) blah blah blah crypto (sounds creepy) blah blah blah understand the risk (I don`t, though.)," she tweeted. "I know you mean to help, but full disclosure: I’m only allowing myself alcohol at weekends during this lockdown and I`m on my fourth very strong Old Fashioned and honestly, you might as well send me a scroll written in Sanskrit."',
+        "Attention mobility startups, professionals, investors and enthusiasts! You have just 48 hours remaining to save \$200 on TC Sessions: Mobility 2022, our first in-person mobility event since 2019. The … [+3764 chars]",
   ),
   News(
     author: "Darrell Etherington",
