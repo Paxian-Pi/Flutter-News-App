@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/constants.dart';
-import 'package:news_app/views/breaking_tab_view.dart';
-import 'package:news_app/views/social_tab_view.dart';
-import 'package:news_app/views/trending_tab_view.dart';
+import 'package:news_app/views/topNav/breaking_tab_view.dart';
+import 'package:news_app/views/topNav/social_tab_view.dart';
+import 'package:news_app/views/topNav/trending_tab_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -60,11 +60,7 @@ class HomeView extends StatelessWidget {
           ),
         ),
         body: const TabBarView(
-          children: [
-            BreakingTabView(),
-            SocialTabView(),
-            TrendingTabView()
-          ],
+          children: [BreakingTabView(), SocialTabView(), TrendingTabView()],
         ),
       ),
     );
