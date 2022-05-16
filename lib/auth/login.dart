@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:news_app/constantVariables.dart';
 import 'package:news_app/models/auth_model.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../bottomNav.dart';
 import 'Signup.dart';
@@ -51,6 +53,8 @@ class _LoginState extends State<Login> {
 
   String email = '';
   String password = '';
+
+  late SharedPreferences _pref;
 
   Future<LoginResponseModel> _login(LoginRequestModel loginRequest) async {
     const url = 'https://reqres.in/api/login';
@@ -250,7 +254,7 @@ class _LoginState extends State<Login> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(
-          onPressed: () {
+          onPressed: () async {
             if (!validateAndSave()) {
               return;
             }
@@ -268,10 +272,14 @@ class _LoginState extends State<Login> {
 
             setState(() => _isLoggedInClicked = true);
 
+            _pref = await SharedPreferences.getInstance();
+
             _login(LoginRequestModel(email: email, password: password))
                 .then((value) => {
                       if (value.token.isNotEmpty)
                         {
+                          _pref.setBool(ConstantVariables.logIn,
+                              ConstantVariables.isLoggedIn = true),
                           _isLoggedInClicked = false,
                           Navigator.of(context).pushReplacement(
                             PageTransition(
