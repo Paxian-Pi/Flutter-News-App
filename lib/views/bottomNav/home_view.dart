@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:animated_widgets/widgets/scale_animated.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -97,6 +99,10 @@ class _HomeViewState extends State<HomeView> {
             _pref.remove(ConstantVariables.logIn);
 
             Navigator.of(context).pop();
+
+            Timer(const Duration(milliseconds: 500), () {
+              SystemNavigator.pop();
+            });
           },
           child: Container(
             width: MediaQuery.of(context).size.width * 0.4,
