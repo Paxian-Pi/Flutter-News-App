@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 const kGrey1 = Color(0xFF9F9F9F);
 const kGrey2 = Color(0xFF6D6D6D);
-const kGrey3 = Color(0xFFEAEAEA);
+const kGrey3 = Color(0xFFE2E5FF);
 const kBlack = Color(0xFF1C1C1C);
 
 var kNonActiveTabStyle = GoogleFonts.roboto(

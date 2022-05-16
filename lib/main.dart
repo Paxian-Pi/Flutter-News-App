@@ -1,6 +1,6 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/auth/login.dart';
-import 'package:news_app/bottomNav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const Login(),
+      home: _splash(),
     );
   }
+}
+
+Widget _splash() {
+  return AnimatedSplashScreen(
+    duration: 200,
+    splash: null,
+    nextScreen: const Login(),
+    splashTransition: SplashTransition.fadeTransition,
+    backgroundColor: const Color(0xFFE2E5FF),
+  );
 }
